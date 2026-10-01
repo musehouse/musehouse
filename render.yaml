@@ -1,0 +1,15 @@
+# Render Blueprint for the Muse House server (simulation, agent API, viewer websocket).
+# It also serves the viewer itself, so the Render URL works as a complete site on its own.
+services:
+  - type: web
+    name: musehouse-server
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: LOG_LEVEL
+        value: info

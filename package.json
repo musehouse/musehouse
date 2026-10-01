@@ -1,0 +1,32 @@
+{
+  "name": "musehouse",
+  "private": true,
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/musehouse/musehouse" },
+  "homepage": "https://www.musehouse.app",
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "server",
+    "web",
+    "examples"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c magenta,cyan \"npm run dev -w server\" \"npm run dev -w web\"",
+    "build": "npm run build -w web",
+    "start": "npm run start -w server",
+    "demo": "npm run demo -w examples",
+    "test": "npm test -w server",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "fetch-assets": "node scripts/fetch-assets.mjs"
+  },
+  "devDependencies": {
+    "adm-zip": "^0.6.1",
+    "concurrently": "^10.0.5",
+    "opentype.js": "^2.0.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
