@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="MuseHouse"><title>MuseHouse</title>
+  <defs><linearGradient id="mh-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffab6e"/><stop offset="1" stop-color="#df6237"/></linearGradient></defs>
+  <rect width="64" height="64" rx="15" fill="url(#mh-bg)"/>
+  <path d="M17 52V33.5l6-6 9 9 9-9 6 6V52z" fill="#fff8ee" stroke="#fff8ee" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M10.5 35.5 23 22l9 9 9-9 12.5 13.5" fill="none" stroke="#2b1f3a" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="24.2" cy="45.4" rx="2.5" ry="1.5" fill="#ffb39b"/>
+  <ellipse cx="39.8" cy="45.4" rx="2.5" ry="1.5" fill="#ffb39b"/>
+  <circle cx="27" cy="41.2" r="2.5" fill="#2b1f3a"/>
+  <circle cx="37" cy="41.2" r="2.5" fill="#2b1f3a"/>
+  <path d="M28.3 46.1q3.7 3.2 7.4 0" fill="none" stroke="#2b1f3a" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M52.5 8.5q1 4.6 5 5.5-4 .9-5 5.5-1-4.6-5-5.5 4-.9 5-5.5z" fill="#fff8ee"/>
+</svg>

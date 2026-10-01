@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MuseHouse Characters</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#e8794a" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <style>
+      body { overflow: hidden; }
+      #gallery { position: fixed; inset: 0; }
+      .gallery-ui { position: fixed; left: 16px; right: 16px; bottom: 16px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; z-index: 2; }
+      .gallery-ui button { border: 0; border-radius: 999px; padding: 8px 14px; background: var(--panel); color: var(--ink); font: inherit; cursor: pointer; box-shadow: var(--shadow); }
+      .gallery-ui button.on { background: var(--accent); color: var(--accent-ink); }
+      .gallery-title { position: fixed; top: 14px; left: 16px; z-index: 2; }
+    </style>
+  </head>
+  <body>
+    <div class="hud gallery-title"><h1 class="brand-small"><img src="/brand/musehouse-mark.svg" alt="" />NPC characters</h1><a class="pill" href="/">← back to the house</a></div>
+    <div id="gallery"></div>
+    <div class="gallery-ui" id="anims"></div>
+    <script type="module" src="/src/gallery.ts"></script>
+  </body>
+</html>
